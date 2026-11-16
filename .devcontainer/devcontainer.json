@@ -1,0 +1,13 @@
+Free 16GB RAM / 4-core Linux desktop in your browser with GitHub Codespaces. No credit card.
+
+File: .devcontainer/devcontainer.json
+{
+  "name": "Cloud PC",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/desktop-lite:1": {}
+  },
+  "forwardPorts": [6080],
+  "hostRequirements": { "cpus": 4 }
+}
+Desktop password: vscode
